@@ -15,6 +15,7 @@ This is an example folder and testing environment for [dataverse-utilities](http
 
 - **React 19** with TypeScript - Frontend framework
 - **Vite** - Fast development and building
+- **Console Forwarding** - Browser console logs forwarded to terminal for Claude Code integration
 - **Playwright** - End-to-end testing and automation
 - **Vitest** - Unit testing framework
 - **ESLint** - Code quality and consistency
@@ -65,7 +66,7 @@ This is an example folder and testing environment for [dataverse-utilities](http
 
 ## Available Scripts
 
-- `npm run dev` - Start development server
+- `npm run dev` - Start development server with console forwarding and smart process management (prevents duplicate servers)
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
@@ -73,6 +74,14 @@ This is an example folder and testing environment for [dataverse-utilities](http
 - `npm run test:e2e` - Run Playwright end-to-end tests
 - `npm run test:e2e:ui` - Run Playwright tests with UI mode
 - `npm run test:e2e:headed` - Run Playwright tests in headed mode
+
+## Claude Code Integration
+
+This playground is optimized for AI-assisted development with Claude Code:
+
+- **Console Forwarding**: Browser console logs are automatically forwarded to the terminal, enabling Claude Code to read and analyze frontend logs directly
+- **Smart Dev Server Management**: The custom dev script prevents launching duplicate development servers, avoiding port conflicts during AI-assisted development sessions
+- **Enhanced Debugging**: Real-time console output in terminal improves Claude Code's ability to diagnose and fix issues
 
 ## Testing & Automation
 
